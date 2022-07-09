@@ -1,4 +1,4 @@
-package com.keshav.naklipaisa
+package com.keshav.naklipaisa.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.keshav.naklipaisa.ui.theme.NakliPaisaTheme
+import com.keshav.naklipaisa.presentation.ui.theme.NakliPaisaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

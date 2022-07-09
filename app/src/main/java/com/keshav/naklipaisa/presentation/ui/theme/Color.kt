@@ -1,4 +1,4 @@
-package com.keshav.naklipaisa.ui.theme
+package com.keshav.naklipaisa.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
