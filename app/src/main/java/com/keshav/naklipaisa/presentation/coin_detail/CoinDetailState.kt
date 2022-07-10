@@ -4,6 +4,6 @@ import com.keshav.naklipaisa.domain.model.CoinDetail
 
 data class CoinDetailState(
     val isLoading: Boolean = false,
-    val coins: CoinDetail? = null,
+    val coin: CoinDetail? = null,
     val error: String = ""
 )

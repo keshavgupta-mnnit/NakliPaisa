@@ -15,12 +15,12 @@ class GetCoinsUseCase @Inject constructor(private val repository: CoinRepository
         try {
             emit(Resource.Loading())
             val coins = repository.getCoins()
-            emit(Resource.Success(coins.map { it.toCoin() }))
+            emit(Resource.Success<List<Coin>>(coins.map { it.toCoin() }))
         } catch (e: HttpException) {
-            emit(Resource.Error(e.localizedMessage ?: "Unexpected Error Occurred"))
+            emit(Resource.Error<List<Coin>>(e.localizedMessage ?: "Unexpected Error Occurred"))
         } catch (e: IOException) {
             emit(
-                Resource.Error(
+                Resource.Error<List<Coin>>(
                     e.localizedMessage ?: "Couldn't reach server. Check Internet connection"
                 )
             )
